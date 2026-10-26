@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Naufal Luqman</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-blue-600">MyPortfolio</div>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-300">Beranda</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-300">Tentang</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-300">Portfolio</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-300">Keahlian</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-300">Kontak</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">Beranda</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">Tentang</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">Portfolio</a>
+                <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">Keahlian</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="container mx-auto px-6 z-10 relative">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left animate-fade-in-up">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                        Halo, Saya <span class="text-blue-600">Naufal 👋</span>
+                    </h1>
+                    <div class="text-xl md:text-2xl text-gray-600 mb-6">
+                        <span>Front End Developer</span>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Saya adalah seorang pengembang web yang bersemangat dalam menciptakan pengalaman digital yang menarik dan fungsional.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#portfolio" class="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Lihat Portfolio
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105">
+                            Hubungi Saya
+                        </a>
+                    </div>
+
+                    <div class="flex space-x-4 mt-8 justify-center md:justify-start">
+                        <a href="https://github.com/Naufallqmn" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/naufal-luqman-aliif-b71674337" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center animate-fade-in-up animate-delay-400">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                            <img src="gambar/profil.jpg" alt="Profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
+                            <i class="fas fa-code text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Tentang Saya</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/seed/about123/600/400.jpg" alt="About Me" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-600 mb-6">
+                        Saya adalah seorang mahasiswa dari Program Studi S1 Teknik Informatika yang sedang menempuh pendidikan di Indonesia.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Saya tertarik pada pengembangan web dan selalu ingin membuat produk digital yang bermanfaat, rapi, dan mudah digunakan.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-3"></i><span class="text-gray-700">Responsive Design</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-3"></i><span class="text-gray-700">Clean Code</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-3"></i><span class="text-gray-700">Problem Solving</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-blue-600 mr-3"></i><span class="text-gray-700">Team Work</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Keahlian Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-700">HTML</h3>
+                        <span class="text-blue-600">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="--skill-level: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-700">CSS</h3>
+                        <span class="text-blue-600">75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="--skill-level: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-700">JavaScript</h3>
+                        <span class="text-blue-600">60%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="--skill-level: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Portfolio Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg" data-category="certificate">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="gambar/BTNG 2025.png" alt="Certificate" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">BTNG 2025</h3>
+                        <p class="text-gray-600 mb-4">Pelatihan dasar untuk mahasiswa dengan fokus pada teknologi dan pengembangan diri.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg" data-category="web">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/seed/project1/600/400.jpg" alt="E-Commerce Platform" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">Platform e-commerce lengkap dengan fitur katalog, checkout, dan administrasi produk.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg" data-category="mobile">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/seed/project2/600/400.jpg" alt="Fitness Tracker App" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Fitness Tracker App</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi untuk memantau aktivitas harian dan target kebugaran pengguna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Hubungi Saya</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Mari Bekerja Sama</h3>
+                        <p class="text-gray-600 mb-8">
+                            Saya terbuka untuk kolaborasi dalam proyek baru, ide kreatif, atau kesempatan kerja di bidang web development.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-map-marker-alt text-blue-600"></i></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Lokasi</h4>
+                                    <p class="text-gray-600">Semarang, Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-envelope text-blue-600"></i></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">xxxx@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4"><i class="fas fa-phone text-blue-600"></i></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Telepon</h4>
+                                    <p class="text-gray-600">+62 82x xxxx xxxx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form id="contact-form" class="bg-white p-8 rounded-lg shadow-lg">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subjek</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
+                                Kirim Pesan
+                            </button>
+                        </form>
+                        <div id="success-message" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            Pesan Anda telah berhasil dikirim!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold text-blue-400 mb-2">MyPortfolio</div>
+                    <p class="text-gray-400">© 2025 Naufal Luqman. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-github text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
